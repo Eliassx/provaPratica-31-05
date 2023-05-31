@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+    padding: 6rem;
+}
+
+.header .titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.header p{
+    font-size: 32px;
+    letter-spacing: 0.3rem;
+}
+
+.nav{
+    border: 1px solid #000;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav a{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    'foto1 foto1 foto2'
+    'foto3 foto4 foto2'
+    ;
+    justify-content: center;
+    gap: none;
+}
+
+.img1{
+    width: 1130px;
+    height: 500px;
+
+    grid-area: foto1;
+    background-image: url(assets/img/Foto1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+}
+
+.img1 img{
+    width: 50px;
+    height: 50px;
+
+    display: block;
+}
+
+#dislike1{
+    display: none;
+}
+
+.img2{
+    width: 770px;
+    height: 1000px;
+
+    grid-area: foto2;
+    background-image: url(assets/img/Foto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 1rem;
+}
+
+.img2 img{
+    width: 50px;
+    height: 50px;
+
+    display: block;
+}
+
+#like2{
+    display: none;
+}
+
+.img3{
+    width: 565px;
+    height: 500px;
+
+    grid-area: foto3;
+    background-image: url(assets/img/Foto3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 1rem;
+}
+
+.img3 img{
+    width: 50px;
+    height: 50px;
+
+    display: block;
+}
+
+#like3{
+    display: none;
+}
+
+.img4{
+    width: 565px;
+    height: 500px;
+
+    grid-area: foto4;
+    background-image: url(assets/img/Foto4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 1rem;
+}
+
+.img4 img{
+    width: 50px;
+    height: 50px;
+
+    display: block;
+}
+
+#dislike4{
+    display: none;
+}
+
+.footer{
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text{
+    text-align: center;
+    font-size: 18px;
+}
+
+.midias{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.midias img{
+    width: 35px;
+    height: 35px;
+}
+
+#modal{
+    width: 800px;
+    height: 500px;
+    
+    position: relative;
+    bottom: 1550px;
+    left: 520px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input input{
+    width: 600px;
+    height: 40px;
+
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#mensage{
+    width: 600px;
+    height: 200px;
+}
+
+.buttons{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 140px;
+    height: 40px;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cancel{
+    background-color: #000;
+    opacity: 75%;
+    color: #fff;
+}

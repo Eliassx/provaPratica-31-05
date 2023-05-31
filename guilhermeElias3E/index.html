@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prova Prática</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="titles">
+                <h1>FOTOGRAFO</h1>
+                <p>Guilherme Elias</p>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#" id="openModal">Contato</a></li>
+                    <li><a href="#">Casamentos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="main">
+            <div class="img1">
+                <img src="assets/icones/CoracaoVermelho.svg" alt="" id="like1">
+                <img src="assets/icones/Coracao.svg" alt="" id="dislike1">
+            </div>
+
+            <div class="img2">
+                <img src="assets/icones/Coracao.svg" alt="" id="deslike2">
+                <img src="assets/icones/CoracaoVermelho.svg" alt="" id="like2">
+            </div>
+
+            <div class="img3">
+                <img src="assets/icones/Coracao.svg" alt="" id="deslike3">
+                <img src="assets/icones/CoracaoVermelho.svg" alt="" id="like3">
+            </div>
+
+            <div class="img4">
+                <img src="assets/icones/CoracaoVermelho.svg" alt="" id="like4">
+                <img src="assets/icones/Coracao.svg" alt="" id="dislike4">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="text">
+                <p>Desenvolvido por</p>
+                <p>Carlos Wilton e Jonhathas Maciel</p>
+            </div>
+
+            <div class="midias">
+                <img src="assets/icones/Facebook.svg" alt="">
+                <img src="assets/icones/Instagram.svg" alt="">
+                <img src="assets/icones/Twitter.svg" alt="">
+                <img src="assets/icones/Twitch.svg" alt="">
+            </div>
+        </footer>
+
+            <div id="modal">
+                <h2>Formulário de contato</h2>
+                <div class="input">
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <input type="text" name="number" id="number" placeholder="Digite número para contato">
+                    <input type="text" name="mensage" id="mensage" placeholder="Deixe uma mensagem...">
+                </div>
+                <div class="buttons">
+                    <button type="button" id="cancel">Cancelar</button>
+                    <button type="button">Enviar</button>
+                </div>
+            </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
